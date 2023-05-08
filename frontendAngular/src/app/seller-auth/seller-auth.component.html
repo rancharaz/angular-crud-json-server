@@ -1,1 +1,12 @@
-<h1>SELLER AUTH PAGE</h1>
+<div class="seller-auth">
+    <div class="sign-up">
+        <h1 class="">Seller Sign-up</h1>
+        <!-- app module form // ngSubmit-->
+        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
+            <input class="form-input" ngModel type="text" name="name"  placeholder="Enter Name">
+            <input class="form-input" ngModel type="password" name="password" id="" placeholder="Enter password">
+            <input class="form-input" ngModel type="email" name="email" id="" placeholder="Enter Email">
+            <button class="form-button">Sign up</button>
+        </form>
+    </div>
+</div>
