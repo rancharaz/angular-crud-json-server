@@ -1,0 +1,26 @@
+{
+  "seller": [
+    {
+      "id": 1,
+      "name": "das",
+      "email": "das",
+      "password": ""
+    },
+    {
+      "name": "tat",
+      "email": "tat",
+      "password": "tat",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
