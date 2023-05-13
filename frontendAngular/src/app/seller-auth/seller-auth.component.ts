@@ -14,8 +14,8 @@ export class SellerAuthComponent implements OnInit {
   constructor(private seller:SellerService, private router:Router) { }
 /* parameter for login */
   showLogin = false;
-
-
+/* authentication error */
+authError:string = "";
   /* lifeCycle */
   ngOnInit():void{
     this.seller.reloadSeller();
@@ -27,8 +27,16 @@ export class SellerAuthComponent implements OnInit {
   }
 
   login(data:SignUp):void{
-    console.log(data)
-/*     this.seller.sellerLogin(data) */
+    /* clear login once relogin */
+      this.authError="";
+/*     console.log(data)*/    
+      this.seller.userLogin(data);
+      /* error handling */
+     this.seller.isLoginError.subscribe((isError:any) => {
+    if(isError){
+      this.authError = "Email or password is not correct";
+    }
+  })
   }
 
 

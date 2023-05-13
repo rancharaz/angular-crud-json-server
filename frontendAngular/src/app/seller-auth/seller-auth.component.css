@@ -16,3 +16,6 @@
     cursor: pointer;
     text-align: center;
 }
+.error-auth{
+    text-align: center; color: red; font-style: italic; font-weight: 700;
+}

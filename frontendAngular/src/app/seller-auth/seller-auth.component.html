@@ -5,8 +5,8 @@
         <!-- app module form // ngSubmit-->
         <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
             <input class="form-input" ngModel type="text" name="name"  placeholder="Enter Name">
-            <input class="form-input" ngModel type="password" name="password" id="" placeholder="Enter password">
             <input class="form-input" ngModel type="email" name="email" id="" placeholder="Enter Email">
+            <input class="form-input" ngModel type="password" name="password" id="" placeholder="Enter password">
             <button class="form-button">Sign up</button>
             <a class="auth-toggle-link" (click)="openLogin()">Already have account? Click to login</a>
         </form>
@@ -16,6 +16,7 @@
     <!-- LOGIN AREA -->
     <div *ngIf="showLogin" class="login">
         <h1 class="">Seller Login</h1>
+        <p class="error-auth">{{authError}}</p>
         <!-- app module form // ngSubmit-->
         <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
             <input class="form-input" ngModel type="email" name="email" id="" placeholder="Enter Email">

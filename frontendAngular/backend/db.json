@@ -5,7 +5,19 @@
       "name": "das",
       "email": "das",
       "password": ""
-    } 
+    },
+    {
+      "name": "ded",
+      "password": "ded",
+      "email": "ded",
+      "id": 2
+    },
+    {
+      "name": "rancharaz",
+      "email": "rancharaz@hotmail.com",
+      "password": "rancharaz",
+      "id": 3
+    }
   ],
   "comments": [
     {
