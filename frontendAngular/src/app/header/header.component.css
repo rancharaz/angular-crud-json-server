@@ -6,16 +6,17 @@ nav {
     color: blueviolet;
     margin: 0;
     font-size: 40px;
-    
+    cursor: pointer;
+
 }
 .nav ul {
     display: inline-flex;
     list-style-type: none;
-   
+
 }
 .nav li {
    padding-left: 15px;
-    
+
 }
 .nav ul a {
     text-decoration: none;
@@ -36,9 +37,9 @@ nav {
     border-right: 0;
 }
 .nav .nav-search button {
-    
+
     color: blueviolet;
     border: 1px solid blueviolet;
     height: 39px;
-    
+
 }
