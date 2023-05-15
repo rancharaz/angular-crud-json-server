@@ -4,7 +4,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    
+
 }
 .container {
     margin-left: 5%;
@@ -29,5 +29,11 @@ body{
     height: 35px;
     border: 1px solid blueviolet;
     cursor: pointer;
-    
+
+}
+.message-p {
+  text-align: center;
+  color: green;
+  font-weight: 700;
+
 }

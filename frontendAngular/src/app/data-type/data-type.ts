@@ -7,6 +7,15 @@ export interface SignUp {
 
 /* interface for datatype for login */
 export interface login {
-    email:String, 
+    email:String,
     password:String
+}
+/* interface for datatype for add product */
+export interface product {
+  name:String,
+  price:number,
+  category: String,
+  color: String,
+  description:String,
+  image:String
 }
