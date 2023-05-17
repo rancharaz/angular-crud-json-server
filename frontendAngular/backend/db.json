@@ -19,24 +19,5 @@
       "id": 3
     }
   ],
-  "products": [
-    {
-      "name": "iphone 15",
-      "price": "58555",
-      "category": "Mobile Phone",
-      "color": "Red",
-      "description": "Very good",
-      "image": "dsadaddas",
-      "id": 1
-    },
-    {
-      "name": "eee",
-      "price": "eee",
-      "category": "eee",
-      "color": "eee",
-      "description": "eee",
-      "image": "eee",
-      "id": 2
-    }
-  ]
+  "products": []
 }
