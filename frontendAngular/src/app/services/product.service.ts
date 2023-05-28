@@ -23,4 +23,9 @@ export class ProductService {
     return this.http.delete(`http://localhost:3000/products/${id}`)
 
   }
+
+  /*  getproduct to update*/
+  getProduct(id:string){
+    return this.http.get<product>(`http://localhost:3000/products/${id}`)
+  }
 }

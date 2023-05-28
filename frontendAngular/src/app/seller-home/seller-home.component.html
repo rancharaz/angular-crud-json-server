@@ -25,7 +25,11 @@
         <td>{{item.category}}</td>
         <td>{{item.color}}</td>
         <td>{{item.description}}</td>
-        <td><button (click)="deleteProduct(item.id)">Delete</button></td>
+        <td>
+
+          <button (click)="deleteProduct(item.id)">Delete</button> <!-- delete button created -->
+          <a routerLink="/seller-update-product/{{item.id}}">Update</a> <!-- update link created to page -->
+        </td>
 
       </tr>
     </tbody>

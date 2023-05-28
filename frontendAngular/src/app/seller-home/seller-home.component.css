@@ -11,3 +11,6 @@ table td, table th{
 img {
   height: 7rem;
 }
+.adjust-update-link{
+  margin-left: 5px;
+}
