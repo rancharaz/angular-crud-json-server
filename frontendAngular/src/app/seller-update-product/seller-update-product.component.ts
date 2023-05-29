@@ -11,8 +11,14 @@ import { product } from '../data-type/data-type';
 export class SellerUpdateProductComponent implements OnInit {
 /* activate route id from url */
   constructor(private route: ActivatedRoute, private product:ProductService) { }
-/* variable to add the data from get */
+
+  /* variable to add the data from get */
 productData:undefined | product
+
+/* message in case update  200*/
+productMessage:undefined |string;
+
+
   ngOnInit(): void {
     /* id from url */
     let productId = this.route.snapshot.paramMap.get('id');
@@ -23,7 +29,21 @@ productData:undefined | product
       this.productData = data;
     })
   }
-  submit(data:any){
+  /* product datatype */
+  submit(data:product){
+   /*  console.log(data) */
+    if(this.productData){
+      data.id = this.productData.id;
+    }
 
+   /* data being passed */ /* subscribe->callback function */
+    this.product.updateProduct(data).subscribe((result) => {
+      if(result){
+        this.productMessage="Product has been updated";
+      }
+    })
+    setTimeout(() => {
+      this.productMessage=undefined;
+    }, 3000);
   }
 }

@@ -22,7 +22,7 @@
   "products": [
     {
       "name": "Motorola1",
-      "price": "15887",
+      "price": "158899",
       "category": "Mobile",
       "color": "Red",
       "description": "Jolie",
@@ -30,7 +30,7 @@
       "id": 1
     },
     {
-      "name": "Motorola2",
+      "name": "MotorolaS",
       "price": "15887",
       "category": "Mobile",
       "color": "Red",

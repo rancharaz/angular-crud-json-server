@@ -28,4 +28,11 @@ export class ProductService {
   getProduct(id:string){
     return this.http.get<product>(`http://localhost:3000/products/${id}`)
   }
+
+  /* update product */
+  /* everything will be in the product parameter  */
+  updateProduct(product:product){
+    /* product as data to second parameter */
+    return this.http.put<product>(`http://localhost:3000/products/${product.id}`, product)
+  }
 }
